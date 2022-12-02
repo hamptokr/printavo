@@ -150,7 +150,7 @@ impl Printavo {
         self.execute(request).await
     }
 
-    /// Execute the given `request` using octocrab's Client.
+    /// Execute the given `request` using printavo's Client.
     pub async fn execute(&self, mut request: reqwest::RequestBuilder) -> Result<reqwest::Response> {
         let mut retries = 0;
         loop {
