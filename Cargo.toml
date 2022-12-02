@@ -1,0 +1,18 @@
+[package]
+name = "printavo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.59"
+reqwest = { version = "0.11.13", features = ["json"] }
+secrecy = { version = "0.8.0", features = ["serde"] }
+serde = { version = "1.0.148", features = ["derive"] }
+serde_json = "1.0.89"
+serde_path_to_error = "0.1.8"
+thiserror = "1.0.37"
+time = { version = "0.3.17", features = ["serde", "macros", "formatting", "parsing"] }
+tokio = { version = "1.22.0", features = ["full"] }
+url = { version = "2.3.1", features = ["serde"] }
