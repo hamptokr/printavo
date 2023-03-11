@@ -1,7 +1,7 @@
 use crate::params;
 use crate::Printavo;
 
-#[derive(serde::Deserialize)]
+#[derive(Debug, serde::Deserialize, Clone, Copy)]
 pub struct Order {
     pub id: u32,
     pub order_total: f32,
